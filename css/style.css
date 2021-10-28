@@ -31,7 +31,7 @@ nav {
     font-size: 40px;
     margin-top: 5px;
     font-family: "Bely Display";
-    background-color: #ebff00;
+    background-color: #ffff00;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -59,7 +59,7 @@ nav a{
 }
   
 nav a:hover{
-    background-color: #ebff00;
+    background-color: #ffff00;
     padding-left: 15px;
     padding-right: 15px;
     color: #333;
@@ -87,7 +87,7 @@ nav a:hover{
 }
 
 .dropbtn:hover{
-    background-color: #ebff00;
+    background-color: #ffff00;
     color: #333;
     transition: background-color 250ms cubic-bezier(.55, .085, .68, .53);
     transform: scale(1.05); 
@@ -228,7 +228,7 @@ nav a:hover{
 }
 
 .courses ul li a:hover {
-    background-color: #ebff00;
+    background-color: #ffff00;
     color: #333;
     padding-right: 35px;
     text-decoration-line: underline;
@@ -244,7 +244,7 @@ nav a:hover{
 }
 
 .connect-area p a:hover {
-    background-color: #ebff00;
+    background-color: #ffff00;
     color: #333;
     padding-right: 35px;
     text-decoration-line: underline;
@@ -267,7 +267,7 @@ nav a:hover{
 }
 
 footer {
-    background-color: #ebff00;
+    background-color: #ffff00;
     color: #333;
     font-weight: bold;
     padding: 15px;
@@ -287,6 +287,7 @@ footer {
 @media screen and (min-width: 850px){
     nav ul {
         flex-direction: row;
+        gap: 40px;
     }
 
     body > nav {
@@ -308,19 +309,35 @@ footer {
     .umsi-courses {
         margin-left: 50px;
         margin-right: 400px;
-        border: 2px solid #ebff00;
+        border: 2px solid #ffff00;
     }
 
     .lsa-courses {
         margin-left: 50px;
         margin-right: 400px;
-        border: 2px solid #ebff00;
+        border: 2px solid #ffff00;
     }
 
 
     .about h1, .about p{
         margin-left: 50px;
         margin-right: 700px;
+    }
+
+    #main {
+        margin-left: 100px;
+        margin-right: 650px;
+        margin-bottom: 30px;
+    }
+
+    .gallery-text {
+        margin-left: 100px;
+        margin-right: 650px;
+        margin-bottom: 30px;
+    }
+
+    .projectgrid {
+        margin-bottom: 30px;
     }
 
     .headshot {
