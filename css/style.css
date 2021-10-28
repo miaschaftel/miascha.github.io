@@ -1,0 +1,141 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-family: "Avante Garde Gothic", sans-serif;
+}
+
+h1, h2 {
+    color: #00274C;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mia{
+    font-size: 40px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+nav{
+    color: #00274C;
+}
+
+nav a{
+    color: #00274C;
+    font-weight: bold;
+    text-decoration: none; 
+}
+  
+nav a:hover{
+    color: #0eb3ffce;
+    text-decoration-color: #00274C;
+}
+
+.dropdown {
+    overflow: hidden;
+}
+ 
+.dropdown .dropbtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: #00274C;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropbtn:hover{
+    color: #0eb3ffce;
+}
+
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    padding: 5px 5px;
+    display: block;
+    text-align: left;
+}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+  
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}
+  
+.skip a:focus{
+    top: 0;
+}
+
+#projectgrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery img {
+    border-radius: 20px;
+    margin: 10px;
+    width: 300px;
+}
+
+footer {
+    background-color: #00274C;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.socials img{
+    width: 39px; 
+    height: 39px; 
+    object-fit: cover;
+}
