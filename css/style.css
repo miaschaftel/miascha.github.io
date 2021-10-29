@@ -180,6 +180,39 @@ nav a:hover{
     margin-bottom: 10px;
 }
 
+#dp1-text {
+    position: absolute;
+    margin-right: 650px;
+    display: none;
+    font-size: 30px;
+}
+
+#dp1-grid:hover + #dp1-text {
+    display: block;
+}
+
+#ghp-text {
+    position: absolute;
+    margin-right: 15px;
+    display: none;
+    font-size: 30px;
+}
+
+#ghp-grid:hover + #ghp-text {
+    display: block;
+}
+
+#dp2-text {
+    position: absolute;
+    margin-left: 650px;
+    display: none;
+    font-size: 30px;
+}
+
+#dp2-grid:hover + #dp2-text {
+    display: block;
+}
+
 .gallery img {
     border-radius: 20px;
     margin: 10px;
