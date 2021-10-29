@@ -8,6 +8,7 @@ body{
   padding: 0;
   font-family: "PT Sans Pro Light", "Avante Garde Gothic", sans-serif;
   background-color: #fff;
+  line-height: 30px;
 }
 
 h1, h2 {
@@ -31,7 +32,7 @@ nav {
 .mia{
     font-size: 40px;
     margin-top: 5px;
-    font-family: "Bely Display", "Zen Antique";
+    font-family: "Bely Display", "Zen Antique Bold";
     background-color: #ffff00;
     padding-left: 40px;
     padding-right: 40px;
