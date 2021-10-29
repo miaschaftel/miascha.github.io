@@ -13,7 +13,8 @@ body{
 h1, h2 {
     color: #333;
     font-family: "PT Sans Pro Light";
-    font-style: italic;
+    /* font-style: italic; */
+    letter-spacing: 1px;
 }
 
 p {
@@ -56,19 +57,18 @@ nav{
 nav a{
     color: #333;
     text-decoration: none; 
+    padding-left: 15px;
+    padding-right: 15px;
 }
   
 nav a:hover{
     background-color: #ffff00;
-    padding-left: 15px;
-    padding-right: 15px;
     color: #333;
-    transition: background-color 450ms cubic-bezier(.55, .085, .68, .53);
 }
 
-.menu-bar li:hover{
-    transform: scale(1.05); 
-    transition-duration: .4s;
+.menu-bar li:active {
+    background-color: #ffff00;
+    transform: scale(1.05);
 }
 
 .dropdown {
@@ -76,7 +76,7 @@ nav a:hover{
 }
  
 .dropdown .dropbtn {
-    padding-top: 10px;
+    /* padding-top: 10px; */
     font-family: "PT Sans Pro", "Avante Garde Gothic", sans-serif;
     font-size: 20px;
     border: none;
@@ -86,12 +86,15 @@ nav a:hover{
     margin: 0; /* Important for vertical align on mobile phones */
 }
 
+.dropbtn{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .dropbtn:hover{
     background-color: #ffff00;
+    padding-top: 0px;
     color: #333;
-    transition: background-color 250ms cubic-bezier(.55, .085, .68, .53);
-    transform: scale(1.05); 
-    transition-duration: .4s;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -111,6 +114,7 @@ nav a:hover{
     padding: 5px 5px;
     display: block;
     text-align: left;
+    width: 300px;
 }
   
   /* Show the dropdown menu on hover */
@@ -139,8 +143,8 @@ nav a:hover{
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 #main h1{
@@ -154,8 +158,8 @@ nav a:hover{
     align-items: flex-start;
     margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .gallery h2 {
@@ -207,6 +211,36 @@ nav a:hover{
 
 .about p {
     flex-basis: 350px;
+}
+
+.HL-main {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.HL-main h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.HL-main h1, .HL-main h2 {
+    margin-right: 40px;
+    margin-left: 40px;
+    font-style: normal;
+    text-align: center;
+}
+
+.HL-main img {
+    border-radius: 20px;
+    margin: 10px;
+    width: 350px;
+    padding: 5px;
+    margin-left: 10px;
 }
 
 
@@ -358,11 +392,6 @@ footer {
     .gallery img:hover {
         transform: none;
     }
-
-    .dropbtn:hover {
-        transform: none;
-    }
-
     
 }
 
