@@ -1,0 +1,436 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans Pro Light", "Avante Garde Gothic", sans-serif;
+  background-color: #fff;
+  line-height: 30px;
+}
+
+h1, h2 {
+    color: #333;
+    font-family: "PT Sans Pro Light", "Avante Garde Gothic", sans-serif;
+    /* font-style: italic; */
+    letter-spacing: 1.5px;
+}
+
+p {
+    color: #404040;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mia{
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: "Bely Display", "Abril Fatface", serif;
+    background-color: #ffff00;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    padding-top: 10px;
+}
+
+nav{
+    color: #333;
+}
+
+nav a{
+    color: #333;
+    text-decoration: none; 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  
+nav a:hover{
+    background-color: #ffff00;
+    color: #333;
+}
+
+.menu-bar li:active {
+    background-color: #ffff00;
+    transform: scale(1.05);
+}
+
+.dropdown {
+    overflow: hidden;
+}
+ 
+.dropdown .dropbtn {
+    /* padding-top: 10px; */
+    font-family: "PT Sans Pro", "Avante Garde Gothic", sans-serif;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #333;
+    background-color: #fff;
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropbtn{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dropbtn:hover{
+    background-color: #ffff00;
+    padding-top: 0px;
+    color: #333;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    /* padding: 5px 5px; */
+    display: block;
+    text-align: left;
+    width: 300px;
+}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}
+  
+.skip a:focus{
+    top: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 50px;
+}
+
+#main h1{
+    padding-bottom: 15px;
+}
+
+.gallery-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    margin-right: 50px;
+}
+
+.gallery h2 {
+    padding-bottom: 15px;
+}
+
+.projectgrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#dp1-text {
+    position: absolute;
+    margin-right: 650px;
+    display: none;
+    font-size: 30px;
+}
+
+#dp1-grid:hover + #dp1-text {
+    display: block;
+}
+
+#ghp-text {
+    position: absolute;
+    margin-right: 15px;
+    display: none;
+    font-size: 30px;
+}
+
+#ghp-grid:hover + #ghp-text {
+    display: block;
+}
+
+#dp2-text {
+    position: absolute;
+    margin-left: 650px;
+    display: none;
+    font-size: 30px;
+}
+
+#dp2-grid:hover + #dp2-text {
+    display: block;
+}
+
+.gallery img {
+    border-radius: 20px;
+    margin: 10px;
+    width: 300px;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); 
+    transition-duration: .4s;
+}
+
+.headshot{
+    border-radius: 20px;
+    margin: 10px;
+    width: 300px;
+    padding: 5px;
+}
+
+.about {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.about h1{
+    padding-bottom: 15px;
+}
+
+.about p {
+    flex-basis: 350px;
+}
+
+#HL-main {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#HL-main h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+#HL-main h1, #HL-main h2 {
+    margin-right: 40px;
+    margin-left: 40px;
+    font-style: normal;
+    text-align: center;
+}
+
+#HL-main img {
+    border-radius: 20px;
+    margin: 10px;
+    width: 350px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.courses li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.courses ul li a:hover {
+    background-color: #ffff00;
+    color: #333;
+    padding-right: 35px;
+    text-decoration-line: underline;
+}
+
+.courses li a:visited {
+    color: #333;
+}
+
+.connect-area p, .connect-area a {
+    color: #333;
+    text-decoration-line: none;
+}
+
+.connect-area p a:hover {
+    background-color: #ffff00;
+    color: #333;
+    padding-right: 35px;
+    text-decoration-line: underline;
+}
+
+.connect-area a:visited {
+    color: #333;
+}
+
+.connect-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #ffff00;
+    color: #333;
+    font-weight: bold;
+    padding: 15px;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.socials img{
+    width: 39px; 
+    height: 39px; 
+    object-fit: cover;
+}
+
+
+@media screen and (min-width: 850px){
+    nav ul {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    body > nav {
+        background-color: #fff;
+        padding-bottom: 15px;
+        top: 0px;
+        position: sticky;
+    }
+
+    .courses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+
+    .umsi-courses {
+        margin-left: 50px;
+        margin-right: 400px;
+        border: 2px solid #ffff00;
+    }
+
+    .lsa-courses {
+        margin-left: 50px;
+        margin-right: 400px;
+        border: 2px solid #ffff00;
+    }
+
+
+    .about h1, .about p{
+        margin-left: 50px;
+        margin-right: 700px;
+    }
+
+    #main {
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-bottom: 30px;
+    }
+
+    .gallery-text {
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-bottom: 30px;
+    }
+
+    .projectgrid {
+        margin-bottom: 30px;
+    }
+
+    .headshot {
+
+    }
+
+    footer {
+        width: 100%;
+        min-height: 75px;
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+    }
+
+}
+
+@media (prefers-reduced-motion) { 
+    .gallery img:hover {
+        transform: none;
+    }
+    
+}
+
+
