@@ -3,7 +3,7 @@ html{
 }
 
 body{
-  font-size: 20px;
+  font-size: 1.25em;
   margin: 0;
   padding: 0;
   font-family: "PT Sans Pro Light", "Avante Garde Gothic", sans-serif;
@@ -30,7 +30,7 @@ nav {
 }
 
 .mia{
-    font-size: 40px;
+    font-size: 2.5em;
     margin-top: 20px;
     font-family: "Bely Display", "Abril Fatface", "Alfa Slab One", serif;
     background-color: #ffff00;
@@ -81,6 +81,7 @@ nav a:hover {
     transform: scale(1.05);
 }
 
+
 .dropdown {
     overflow: hidden;
 }
@@ -108,7 +109,6 @@ nav a:hover {
     padding-left: 15px;
     padding-right: 15px;
 }
-
   /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
@@ -117,8 +117,6 @@ nav a:hover {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
-  
   /* Links inside the dropdown */
 .dropdown-content a {
     /* padding: 5px 5px; */
@@ -126,7 +124,6 @@ nav a:hover {
     text-align: left;
     width: 300px;
 }
-  
   /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
@@ -200,11 +197,6 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-#dp1-text, #dp2-text, #ghp-text {
-    display: none;
-    text-decoration: none;
-}
-
 .gallery img {
     border-radius: 20px;
     margin: 10px;
@@ -215,6 +207,88 @@ nav a:hover {
     transform: scale(1.05); 
     transition-duration: .4s;
 }
+
+.dp1-grid-item {
+    position: relative;
+    text-align: center;
+    padding: 0.75%;
+  }
+
+#dp1-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4em;
+    background-color: rgba(255, 255, 0, 0.85);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 300px;
+}
+  
+.dp1-grid-item:hover{
+    transform: scale(1.05); 
+    transition-duration: .4s;
+    background-color: rgba(255, 255, 0, 0.75);
+    border-radius: 20px;
+}
+
+.ghp-grid-item {
+    position: relative;
+    text-align: center;
+    padding: 0.75%;
+  }
+
+#ghp-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4em;
+    background-color: rgba(255, 255, 0, 0.85);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 300px;
+}
+  
+.ghp-grid-item:hover{
+    transform: scale(1.05); 
+    transition-duration: .4s;
+    background-color: rgba(255, 255, 0, 0.75);
+    border-radius: 20px;
+}
+
+.dp2-grid-item {
+    position: relative;
+    text-align: center;
+    padding: 0.75%;
+  }
+
+#dp2-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #333;
+    font-size: 1.4em;
+    background-color: rgba(255, 255, 0, 0.85);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 300px;
+}
+  
+.dp2-grid-item:hover{
+    transform: scale(1.05); 
+    transition-duration: .4s;
+    background-color: rgba(255, 255, 0, 0.75);
+    border-radius: 20px;
+}
+
 
 .headshot{
     border-radius: 20px;
@@ -245,36 +319,6 @@ nav a:hover {
     flex-basis: 350px;
 }
 
-#HL-main {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-#HL-main h1 {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 30px;
-}
-
-#HL-main h1, #HL-main h2 {
-    margin-right: 40px;
-    margin-left: 40px;
-    font-style: normal;
-    text-align: center;
-}
-
-#HL-main img {
-    border-radius: 20px;
-    margin: 10px;
-    width: 350px;
-    padding: 5px;
-    margin-left: 10px;
-}
-
 .courses {
     display: flex;
     flex-direction: column;
@@ -285,6 +329,7 @@ nav a:hover {
     padding-bottom: 20px;
     padding-left: 40px;
     padding-right: 20px;
+    margin-top: 15px;
 }
 
 .courses h2 {
@@ -357,8 +402,51 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.HL-description {
+#HL-main {
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#HL-main h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+.HL-container h2 {
+    font-size: 1.10em;
+}
+
+.HL-container h3 {
+    font-size: 1.10em;
+}
+
+#HL-main h1, #HL-main h2 {
+    margin-right: 25px;
+    margin-left: 25px;
+    font-style: normal;
+    text-align: center;
+}
+
+#HL-main img {
+    border-radius: 20px;
+    margin: 10px;
+    width: 350px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.HL-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 12px;
     padding-bottom: 20px;
     margin-left: 40px;
     margin-right: 30px;
@@ -368,7 +456,7 @@ nav a:hover {
     padding-bottom: 10px;
 }
 
-.indiv-description {
+.HL-description-description h3{
     padding-top: 10px;
 }
 
@@ -376,6 +464,7 @@ footer {
     background-color: #ffff00;
     color: #333;
     font-weight: bold;
+    font-size: 1em;
     padding: 15px;
     text-align: center;
     bottom: 0px;
@@ -387,6 +476,10 @@ footer {
     width: 39px; 
     height: 39px; 
     object-fit: cover;
+}
+
+@media screen and (min-width: 320px){
+    
 }
 
 
@@ -406,6 +499,7 @@ footer {
         color: #333;
         margin-bottom: 10px;
         transform: scale(1.04);
+        transition-duration: 250ms;
     }
 
     .navbar-collapse {
@@ -413,7 +507,6 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        
     }
 
     nav ul {
@@ -454,7 +547,7 @@ footer {
 
     #main {
         margin-left: 100px;
-        margin-right: 250px;
+        margin-right: 100px;
         margin-bottom: 30px;
     }
 
@@ -465,7 +558,7 @@ footer {
     }
 
     .projectgrid {
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .headshot {
@@ -475,71 +568,35 @@ footer {
         width: 350px;
     }
 
-    #dp1-text {
-        position: absolute;
-        margin-right: 640px;
-        display: none;
-        font-size: 30px;
-        color: #333;
-        background-color: #ffff00;
-        padding-left: 62px;
-        padding-right: 62px;
-        padding-top: 1px;
-        padding-bottom: 1px;
+    #HL-main h2 {
+        margin-left: 300px;
+        margin-right: 300px;
     }
-    
-    #dp1-grid:hover + #dp1-text {
-        display: block;
-        padding-left: 70px;
-        padding-right: 70px;
-        padding-top: 1px;
-        padding-bottom: 1px;
+
+    .HL-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        text-align: left;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 20px;
     }
-    
-    #ghp-text {
-        position: absolute;
-        display: none;
-        font-size: 30px;
-        color: #333;
-        background-color: #ffff00;
-        padding-left: 28px;
-        padding-right: 28px;
-        padding-top: 1px;
-        padding-bottom: 1px;
+
+    .HL-description div {
+        padding-right: 40px;
     }
-    
-    #ghp-grid:hover + #ghp-text {
-        display: block;
-        padding-left: 36px;
-        padding-right: 36px;
-        padding-top: 1px;
-        padding-bottom: 1px;
+
+    .skills {
+        margin-left: 70px;
     }
-    
-    #dp2-text {
-        position: absolute;
-        margin-left: 640px;
-        display: none;
-        font-size: 30px;
-        color: #333;
-        background-color: #ffff00;
-        padding-left: 45px;
-        padding-right: 45px;
-        padding-top: 1px;
-        padding-bottom: 1px;
+
+    .HL-description-description {
+        margin-left: 70px;
     }
-    
-    #dp2-grid:hover + #dp2-text {
-        display: block;
-        padding-left: 53px;
-        padding-right: 53px;
-        padding-top: 1px;
-        padding-bottom: 1px;
-    }
-    
-    #dp1-text:hover, #dp2-text:hover, #ghp-text:hover {
-        display: block;
-    }
+
 
    .connect-area {
         margin-left: 300px;
