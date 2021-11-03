@@ -47,6 +47,7 @@ nav {
     color: #333;
 }
 
+/* NAV BAR CSS */
 
 nav ul {
     list-style-type: none;
@@ -81,7 +82,7 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-
+/* DROP DOWN IF NOT USING BOOTSTRAP NAV BAR */
 .dropdown {
     overflow: hidden;
 }
@@ -142,7 +143,8 @@ nav a:hover {
 .navbar-toggler-icon {
     color: red;
 }
-  
+
+/* SKIP TO CONTENT CSS */
 .skip a{
     background: white;
     left: 0;
@@ -157,6 +159,8 @@ nav a:hover {
 .skip a:focus{
     top: 0;
 }
+
+/* HOMEPAGE CSS */
 
 #main {
     display: flex;
@@ -203,10 +207,6 @@ nav a:hover {
     width: 300px;
 }
 
-.gallery img:hover {
-    transform: scale(1.05); 
-    transition-duration: .4s;
-}
 
 .dp1-grid-item {
     position: relative;
@@ -289,6 +289,7 @@ nav a:hover {
     border-radius: 20px;
 }
 
+/* ABOUT PAGE CSS */
 
 .headshot{
     border-radius: 20px;
@@ -402,6 +403,8 @@ nav a:hover {
     border-radius: 5px;
 }
 
+/* DP1 PAGE CSS */
+
 #HL-main {
     padding-top: 10px;
     display: flex;
@@ -417,7 +420,7 @@ nav a:hover {
     font-size: 2em;
 }
 
-.HL-container h2 {
+#HL-main h2 {
     font-size: 1.10em;
 }
 
@@ -452,13 +455,185 @@ nav a:hover {
     margin-right: 30px;
 }
 
-.HL-description p {
-    padding-bottom: 10px;
-}
-
 .HL-description-description h3{
     padding-top: 10px;
 }
+
+.line-break-page-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.line-break-page-desktop {
+    display: none;
+}
+
+.dp1sketches-description p{
+    padding-top: 12px;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+.dp1sketches-description h3 {
+    padding-left: 40px;
+}
+
+.dp1sketches-img {
+    border-radius: 20px;
+    width: 200px;
+}
+
+.dp1sketches-login, .dp1sketches-post, .dp1sketches-profile {
+    margin-left: 6px;
+}
+
+.dp1sketches-feed, .dp1sketches-search, .dp1sketches-message {
+    margin-right: 2.5px;
+}
+
+.dp1sketches-message, .dp1sketches-profile {
+    margin-bottom: 35px;
+}
+
+.dp1wireframing-description p {
+    padding-top: 12px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+.dp1wireframing-description h3 {
+    padding-left: 40px;
+}
+
+.dp1wireframes-feed {
+    border: 2px solid #333;
+    border-radius: 20px;
+    width: 150px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.dp1wireframes-login {
+    border: 2px solid #333;
+    border-radius: 20px;
+    width: 150px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.dp1-prototype p {
+    padding-top: 12px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+.dp1-prototype h3 {
+    padding-left: 40px;
+}
+
+.dp1-figma-prototype {
+    border: 4px solid #333;
+    border-radius: 20px;
+    width: 250px;
+    height: 550px;
+    margin-left: 90px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+/* GHP PAGE CSS */
+
+#GHP-main {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#GHP-logo {
+    margin: 10px;
+}
+
+#GHP-main h2 {
+    font-size: 1.10em;
+}
+
+.GHP-container h3 {
+    font-size: 1.10em;
+}
+
+#GHP-main h2 {
+    margin-right: 25px;
+    margin-left: 25px;
+    font-style: normal;
+    text-align: center;
+}
+
+#GHP-main img {
+    border-radius: 20px;
+    margin: 10px;
+    width: 350px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.GHP-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+.GHP-description-description h3{
+    padding-top: 10px;
+}
+
+.GHP-timeline p {
+    margin-bottom: 2px;
+}
+
+.GHP-timeline {
+    margin-bottom: 20px;
+}
+
+.line-break-page-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.line-break-page-desktop {
+    display: none;
+}
+
+.GHP-logo-before-and-after {
+    
+}
+
+.GHP-logo-old, .GHP-logo-new {
+    border-radius: 20px;
+    margin: 10px;
+    width: 350px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+
+/* FOOTER CSS */
 
 footer {
     background-color: #ffff00;
@@ -502,6 +677,8 @@ footer {
         transition-duration: 250ms;
     }
 
+    /* NAV BAR CSS */
+
     .navbar-collapse {
         display: flex;
         flex-direction: row;
@@ -514,36 +691,7 @@ footer {
         gap: 40px;
     }
 
-    .courses {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 15px;
-        margin-top: 10px;
-    }
-
-
-    .umsi-courses {
-        margin-right: 500px;
-    }
-
-    .lsa-courses {
-        position: absolute;
-        margin-left: 810px;
-        margin-right: 140px;
-        margin-bottom: 150px;
-    }
-
-    #si-one:hover {
-        padding-right: 10px;
-    }
-
-
-    .about h1, .about p{
-        margin-right: 400px;
-    }
+    /* HOMEPAGE CSS */
 
     #main {
         margin-left: 100px;
@@ -561,12 +709,54 @@ footer {
         margin-bottom: 50px;
     }
 
+    /* ABOUT PAGE CSS */
+
+    .courses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .umsi-courses {
+        margin-right: 500px;
+    }
+
+    .lsa-courses {
+        position: absolute;
+        margin-left: 810px;
+        margin-right: 140px;
+        margin-bottom: 150px;
+    }
+
+    #si-one:hover {
+        padding-right: 10px;
+    }
+
+    .about h1, .about p{
+        margin-right: 400px;
+    }
+
     .headshot {
         position: absolute;
         margin-left: 725px;
         margin-top: -85px;
         width: 350px;
     }
+
+    .connect-area {
+        margin-left: 300px;
+        margin-right: 300px;
+        padding-left: 30px;
+        padding-top: 25px;
+        margin-bottom: 50px;
+        margin-top: 0px;
+    } 
+
+    /* DP1 PAGE CSS */
 
     #HL-main h2 {
         margin-left: 300px;
@@ -597,15 +787,60 @@ footer {
         margin-left: 70px;
     }
 
+    .line-break-page-mobile {
+        display: none;
+    }
 
-   .connect-area {
-        margin-left: 300px;
-        margin-right: 300px;
-        padding-left: 30px;
-        padding-top: 25px;
-        margin-bottom: 50px;
-        margin-top: 0px;
-    } 
+    .line-break-page-desktop {
+        display: inline;
+        margin-left: 275px;
+    }
+
+    .dp1sketches-description p{
+        padding-top: 2px;
+        margin-left: 270px;
+        margin-right: 250px;
+    }
+    
+    .dp1sketches-description h3 {
+        margin-left: 230px;
+        margin-top: 25px;
+    }
+    
+    .dp1-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+
+    .dp1wireframing-description {
+        margin-left: 237px;
+        margin-right: 220px;
+    }
+
+    .dp1wireframes-img {
+        width: 200px;
+    }
+
+    .dp1wireframes-feed {
+        margin-left: 250px;
+        margin-right: 30px;
+    }
+
+    .dp1-figma-prototype {
+        margin-left: 600px;
+    }
+
+    .dp1-prototype h3 {
+        margin-top: 25px;
+        margin-left: 470px;
+    }
+
+   /* FOOTER CSS */
 
     footer {
         min-height: 75px;
@@ -614,23 +849,24 @@ footer {
         left: 0px;
     }
 
-    /* body > nav {
-        background-color: #fff;
-        padding-bottom: 15px;
-        top: 0px;
-        position: sticky;
-    } */
-
 }
 
 @media (prefers-reduced-motion) { 
-    .gallery img:hover {
-        transform: none;
-    }
-
     .mia:hover {
         transform: none;
         margin-bottom: 5px;
+    }
+
+    .dp1-grid-item:hover {
+        transform: none;
+    }
+
+    .ghp-grid-item:hover {
+        transform: none;
+    }
+
+    .dp2-grid-item:hover {
+        transform: none;
     }
     
 }
