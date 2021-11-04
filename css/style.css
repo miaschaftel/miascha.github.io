@@ -77,6 +77,12 @@ nav a:hover {
     color: #333;
 }
 
+.menu-bar .current {
+    color: #ffff00;
+    background-color: #333;
+    text-decoration: underline;
+}
+
 /* DROP DOWN IF NOT USING BOOTSTRAP NAV BAR */
 .dropdown {
     overflow: hidden;
@@ -754,6 +760,10 @@ footer {
         text-decoration: underline;
     } 
 
+    navbar-toggler {
+        display: none;
+    }
+
     /* ABOUT PAGE CSS */
     
     .about h1 {
@@ -1069,15 +1079,23 @@ footer {
     }
 
     .dp1-timeline {
-        margin-left: 92px;
+        margin-left: 140px;
+    }
+
+    .dp1-roles {
+        margin-left: -40px;
+    }
+
+    .dp1-tools {
+        margin-left: -40px;
     }
 
     .dp1-skills {
-        margin-left: 232px;
+        margin-left: 170px;
     }
 
     .HL-description-description {
-        margin-left: 230px;
+        margin-left: 170px;
         margin-right: 130px;
     }
 
@@ -1107,8 +1125,8 @@ footer {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin-left: 300px;
-        margin-right: 300px;
+        margin-left: 350px;
+        margin-right: 450px;
     }
 
     .dp1sketches-search {
@@ -1197,7 +1215,7 @@ footer {
     .GHP-logos img{
         display: flex;
         flex-direction: row;
-        margin-left: 475px;
+        margin-left: 525px;
         gap: 40px;
     }
 
