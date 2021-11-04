@@ -231,7 +231,7 @@ nav a:hover {
 .dp1-grid-item:hover{
     transform: scale(1.05); 
     transition-duration: .4s;
-    background-color: rgba(255, 255, 0, 0.75);
+    background-color: rgba(255, 255, 0, 1);
     border-radius: 20px;
 }
 
@@ -258,7 +258,7 @@ nav a:hover {
 .ghp-grid-item:hover{
     transform: scale(1.05); 
     transition-duration: .4s;
-    background-color: rgba(255, 255, 0, 0.75);
+    background-color: rgba(255, 255, 0, 1);
     border-radius: 20px;
 }
 
