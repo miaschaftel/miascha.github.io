@@ -896,12 +896,12 @@ footer {
     }
 
     .GHP-timeline {
-        margin-left: 80px;
+        margin-left: 0px;
     }
 
     .GHP-roles {
-        margin-left: 40px;
-        margin-right: 175px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .GHP-tools {
@@ -1067,11 +1067,11 @@ footer {
     }
 
     .dp1-timeline {
-        margin-left: 80px;
+        margin-left: 92px;
     }
 
     .dp1-skills {
-        margin-left: 130px;
+        margin-left: 232px;
     }
 
     .HL-description-description {
@@ -1105,8 +1105,8 @@ footer {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin-left: 400px;
-        margin-right: 400px;
+        margin-left: 300px;
+        margin-right: 300px;
     }
 
     .dp1sketches-search {
@@ -1160,6 +1160,10 @@ footer {
         margin-left: 200px;
         margin-right: 200px;
         margin-top: 20px;
+    }
+
+    .GHP-timeline {
+        margin-right: 70px;
     }
 
     .GHP-roles {
