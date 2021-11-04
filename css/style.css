@@ -486,7 +486,7 @@ nav a:hover {
 }
 
 .dp1sketches-feed, .dp1sketches-search, .dp1sketches-message {
-    margin-right: -10px;
+    margin-left: -10px;
 }
 
 .dp1sketches-message, .dp1sketches-profile {
