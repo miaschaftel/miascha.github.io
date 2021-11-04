@@ -77,11 +77,6 @@ nav a:hover {
     color: #333;
 }
 
-.menu-bar li:active {
-    background-color: #ffff00;
-    transform: scale(1.05);
-}
-
 /* DROP DOWN IF NOT USING BOOTSTRAP NAV BAR */
 .dropdown {
     overflow: hidden;
@@ -486,13 +481,13 @@ nav a:hover {
     width: 200px;
 }
 
-/*.dp1sketches-login, .dp1sketches-post, .dp1sketches-profile {
-    margin-left: 2px;
-} */
+.dp1sketches-login, .dp1sketches-post, .dp1sketches-profile {
+    margin-left: 6px;
+}
 
-/*.dp1sketches-feed, .dp1sketches-search, .dp1sketches-message {
+.dp1sketches-feed, .dp1sketches-search, .dp1sketches-message {
     margin-right: 2.5px;
-} */
+}
 
 .dp1sketches-message, .dp1sketches-profile {
     margin-bottom: 35px;
@@ -765,6 +760,11 @@ footer {
         gap: 40px;
     }
 
+    nav a:active {
+        background-color: #ffff00;
+        text-decoration: underline;
+    }
+
     /* HOMEPAGE CSS */
 
     #main {
@@ -803,7 +803,7 @@ footer {
         position: absolute;
         margin-left: 810px;
         margin-right: 140px;
-        margin-bottom: 150px;
+        margin-bottom: 105px;
     }
 
     #si-one:hover {
