@@ -816,15 +816,6 @@ footer {
         margin-right: 130px;
     }
 
-    .line-break-page-mobile {
-        display: none;
-    }
-
-    .line-break-page-desktop {
-        display: inline;
-        margin-left: 275px;
-    }
-
     .dp1sketches-description p{
         padding-top: 2px;
         margin-left: 270px;
