@@ -147,7 +147,8 @@ nav a:hover {
 
 /* SKIP TO CONTENT CSS */
 .skip a{
-    background: white;
+    background: #333;
+    color: white;       
     left: 0;
     padding: 6px;
     -webkit-transition: top 1s ease-out;
@@ -223,7 +224,7 @@ nav a:hover {
     text-decoration: none;
     color: #333;
     font-size: 1.4em;
-    background-color: rgba(255, 255, 0, 0.85);
+    background-color: rgba(255, 255, 0, 1);
     padding-top: 2px;
     padding-bottom: 2px;
     width: 250px;
@@ -250,7 +251,7 @@ nav a:hover {
     text-decoration: none;
     color: #333;
     font-size: 1.4em;
-    background-color: rgba(255, 255, 0, 0.85);
+    background-color: rgba(255, 255, 0, 1);
     padding-top: 2px;
     padding-bottom: 2px;
     width: 250px;
@@ -477,21 +478,17 @@ nav a:hover {
     padding-left: 40px;
 }
 
+.dp1-images {
+    display: grid;
+    object-fit:contain;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 8px;
+}
+
 .dp1sketches-img {
     border-radius: 20px;
     width: 150px;
-}
-
-.dp1sketches-login, .dp1sketches-post, .dp1sketches-profile {
-    margin-left: 15px;
-}
-
-.dp1sketches-feed, .dp1sketches-search, .dp1sketches-message {
-    margin-left: -10px;
-}
-
-.dp1sketches-message, .dp1sketches-profile {
-    margin-bottom: 35px;
 }
 
 .dp1wireframing-description p {
@@ -518,10 +515,10 @@ nav a:hover {
     border-radius: 20px;
     width: 125px;
     margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-.dp1-prototype p {
+/* .dp1-prototype p {
     padding-top: 12px;
     padding-bottom: 20px;
     margin-left: 40px;
@@ -540,7 +537,7 @@ nav a:hover {
     margin-left: 65px;
     margin-top: 15px;
     margin-bottom: 40px;
-}
+} */
 
 /* GHP PAGE CSS */
 
@@ -552,6 +549,12 @@ nav a:hover {
     align-items: center;
     flex-wrap: wrap;
     margin-right: 30px;
+}
+
+#GHP-main h1 {
+    font-size: .75em;
+    text-align: center;
+    font-weight: bold;
 }
 
 #GHP-logo {
@@ -658,17 +661,19 @@ nav a:hover {
 .GHP-logos-old {
     position: relative;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 90px;
 }
 
 .GHP-logos-old p {
     position: absolute;
-    font-size: .75em;
-    top: 120%;
+    font-size: .85em;
+    top: 140%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-decoration: underline;
     font-style: italic;
+    font-weight: bold;
+    color: #000;
   }
 
 .GHP-logos-new {
@@ -679,12 +684,14 @@ nav a:hover {
 
 .GHP-logos-new p {
     position: absolute;
-    font-size: .75em;
-    top: 120%;
+    font-size: .85em;
+    top: 140%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-decoration: underline;
     font-style: italic;
+    font-weight: bold;
+    color: #000;
   }
 
   .GHP-temporary-links {
@@ -695,7 +702,16 @@ nav a:hover {
       flex-wrap: wrap;
       margin-left: 50px;
       margin-right: 20px;
+      color: #333;
   }
+
+  .GHP-temporary-links a {
+      color: #333;
+  }
+
+  .GHP-temporary-links a:visited {
+    color: #333;
+}
 
   .GHP-temporary-links-new {
       margin-top: 15px;
@@ -725,12 +741,8 @@ footer {
 @media only screen and (min-width: 768px){
     .mia {
         color: #333;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-left: 200px;
-        margin-right: 200px;
+        padding-left: 200px;
+        padding-right: 200px;
         margin-bottom: 5px;
     }
     
@@ -1020,6 +1032,7 @@ footer {
         flex-wrap: wrap;
         gap: 15px;
         margin-top: 10px;
+        bottom: 15%;
     }
 
     .umsi-courses {
@@ -1030,11 +1043,17 @@ footer {
         position: absolute;
         margin-left: 810px;
         margin-right: 140px;
-        margin-bottom: 105px;
+        margin-bottom: 525px;
     }
 
     #si-one:hover {
         padding-right: 10px;
+    }
+
+    #about {
+        display: grid;
+        grid-template-columns: 1 fr 1fr;
+        grid-template-rows: 1;
     }
 
     .about h1, .about p{
@@ -1042,7 +1061,7 @@ footer {
     }
 
     .headshot {
-        position: absolute;
+        position: static;
         margin-left: 725px;
         margin-top: -85px;
         width: 350px;
