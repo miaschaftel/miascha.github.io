@@ -596,6 +596,10 @@ nav a:hover {
     margin-right: 30px;
 }
 
+.GHP-description-description {
+    margin-bottom: 0px;
+}
+
 .GHP-description-description h3{
     padding-top: 10px;
 }
@@ -620,17 +624,73 @@ nav a:hover {
     display: none;
 }
 
-.GHP-logo-before-and-after {
-    
+.GHP-before-and-after {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 30px;
 }
 
-.GHP-logo-old, .GHP-logo-new {
-    border-radius: 20px;
-    margin: 10px;
+.GHP-logo-before-and-after {
+    padding-top: 12px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+.GHP-logo-old-img, .GHP-logo-new-img {
     width: 350px;
     padding: 5px;
-    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
+
+.GHP-logo-new-img {
+    margin-bottom: 15px;
+}
+
+.GHP-logo-old-img {
+    margin-bottom: 10px;
+}
+
+.GHP-logos img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.GHP-logos-old {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.GHP-logos-old p {
+    position: absolute;
+    font-size: .75em;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: underline;
+    font-style: italic;
+  }
+
+.GHP-logos-new {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.GHP-logos-new p {
+    position: absolute;
+    font-size: .75em;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: underline;
+    font-style: italic;
+  }
 
 
 /* FOOTER CSS */
@@ -770,21 +830,34 @@ footer {
         align-items: baseline;
         flex-wrap: wrap;
         text-align: left;
-        margin-left: 200px;
-        margin-right: 200px;
+        /* margin-left: 200px;
+        margin-right: 200px; */
         margin-top: 20px;
     }
+
+    /* .dp1-timeline {
+        margin-left: 45px;
+    }
+    
+    .dp1-tools {
+        margin-left: 100px;
+    }
+
+    .dp1-skills {
+        margin-left: 70px;
+    } */
 
     .HL-description div {
         padding-right: 40px;
     }
 
-    .skills {
-        margin-left: 70px;
+    .dp1-skills {
+        margin-left: 50px;
     }
 
     .HL-description-description {
-        margin-left: 70px;
+        margin-left: 190px;
+        margin-right: 130px;
     }
 
     .line-break-page-mobile {
@@ -817,6 +890,10 @@ footer {
         margin-right: 400px;
     }
 
+    .dp1sketches-search {
+        margin-top: -40px;
+    }
+
     .dp1wireframing-description {
         margin-left: 237px;
         margin-right: 220px;
@@ -832,13 +909,78 @@ footer {
     }
 
     .dp1-figma-prototype {
-        margin-left: 600px;
+        width: 350px;
+        height: 650px;
+        margin-left: 550px;
     }
 
     .dp1-prototype h3 {
         margin-top: 25px;
         margin-left: 470px;
     }
+
+    .dp1-prototype p {
+        margin-left: 510px;
+        margin-right: 500px;
+    }
+
+    /* GHP PAGE CSS */
+
+    #GHP-main h2 {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    .GHP-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        text-align: left;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 20px;
+    }
+
+    .GHP-roles {
+        margin-left: 35px;
+        margin-right: 100px;
+    }
+
+    .GHP-tools {
+        margin-left: 65px;
+    }
+
+    .GHP-skills {
+        margin-left: 200px;
+    }
+
+    .GHP-description-description {
+        margin-left: 90px;
+    }
+
+    .GHP-before-and-after {
+        margin-left: 285px;
+        margin-right: 20px;
+    }
+
+    .GHP-logo-before-and-after h3, .GHP-logo-before-and-after p {
+        margin-left: 245px;
+    }
+
+    .GHP-logos img{
+        display: flex;
+        flex-direction: row;
+        margin-left: 475px;
+        gap: 40px;
+    }
+
+    .GHP-logos p {
+        left: 30%;
+    }
+
+
 
    /* FOOTER CSS */
 
