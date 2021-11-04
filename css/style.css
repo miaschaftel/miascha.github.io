@@ -803,8 +803,8 @@ footer {
     /* DP1 PAGE CSS */
 
     #HL-main h2 {
-        margin-left: 150px;
-        margin-right: 150px;
+        margin-left: 130px;
+        margin-right: 130px;
     }
 
     .HL-description {
@@ -815,7 +815,8 @@ footer {
         flex-wrap: wrap;
         text-align: left;
         margin-top: 20px;
-        margin-left: 150px;
+        margin-left: 140px;
+        margin-right: 100px;
     }
 
     .HL-description div {
@@ -824,12 +825,12 @@ footer {
 
     .dp1sketches-description p{
         padding-top: 2px;
-        margin-left: 150px;
-        margin-right: 100px;
+        margin-left: 140px;
+        margin-right: 140px;
     }
     
     .dp1sketches-description h3 {
-        margin-left: 110px;
+        margin-left: 100px;
         margin-top: 25px;
     }
     
@@ -854,7 +855,7 @@ footer {
 
     .dp1wireframing-description {
         margin-left: 100px;
-        margin-right: 120px;
+        margin-right: 100px;
     }
 
     .dp1wireframes-img {
