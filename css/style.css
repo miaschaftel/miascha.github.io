@@ -870,7 +870,8 @@ footer {
     .dp1-figma-prototype {
         width: 350px;
         height: 650px;
-        margin-left: 210px;
+        margin-left: 25%;
+        margin-right: 25%;
     }
 
     .dp1-prototype h3 {
