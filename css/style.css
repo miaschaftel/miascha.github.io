@@ -482,11 +482,11 @@ nav a:hover {
 }
 
 .dp1sketches-login, .dp1sketches-post, .dp1sketches-profile {
-    margin-left: 6px;
+    margin-left: 2px;
 }
 
 .dp1sketches-feed, .dp1sketches-search, .dp1sketches-message {
-    margin-right: 2.5px;
+    /* margin-right: 2px; */
 }
 
 .dp1sketches-message, .dp1sketches-profile {
@@ -844,33 +844,23 @@ footer {
         align-items: baseline;
         flex-wrap: wrap;
         text-align: left;
-        /* margin-left: 200px;
-        margin-right: 200px; */
         margin-top: 20px;
     }
-
-    /* .dp1-timeline {
-        margin-left: 45px;
-    }
-    
-    .dp1-tools {
-        margin-left: 100px;
-    }
-
-    .dp1-skills {
-        margin-left: 70px;
-    } */
 
     .HL-description div {
         padding-right: 40px;
     }
 
+    .dp1-timeline {
+        margin-left: 80px;
+    }
+
     .dp1-skills {
-        margin-left: 50px;
+        margin-left: 130px;
     }
 
     .HL-description-description {
-        margin-left: 190px;
+        margin-left: 230px;
         margin-right: 130px;
     }
 
@@ -909,7 +899,7 @@ footer {
     }
 
     .dp1wireframing-description {
-        margin-left: 237px;
+        margin-left: 230px;
         margin-right: 220px;
     }
 
