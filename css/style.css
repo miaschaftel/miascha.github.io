@@ -692,6 +692,20 @@ nav a:hover {
     font-style: italic;
   }
 
+  .GHP-temporary-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-left: 50px;
+      margin-right: 20px;
+  }
+
+  .GHP-temporary-links-new {
+      margin-top: 15px;
+  }
+
 
 /* FOOTER CSS */
 
@@ -980,7 +994,9 @@ footer {
         left: 30%;
     }
 
-
+    .GHP-temporary-links-old {
+        margin-top: 15px;
+    }
 
    /* FOOTER CSS */
 
