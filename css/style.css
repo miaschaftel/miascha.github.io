@@ -482,11 +482,11 @@ nav a:hover {
 }
 
 .dp1sketches-login, .dp1sketches-post, .dp1sketches-profile {
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 .dp1sketches-feed, .dp1sketches-search, .dp1sketches-message {
-    margin-left: -10px;
+    margin-left: -20px;
 }
 
 .dp1sketches-message, .dp1sketches-profile {
