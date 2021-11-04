@@ -722,12 +722,236 @@ footer {
     object-fit: cover;
 }
 
-@media screen and (min-width: 320px){
+@media screen and (min-width: 768px){
+    .mia {
+        color: #333;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 500px;
+        margin-right: 500px;
+        margin-bottom: 5px;
+    }
     
+    .mia:hover {
+        color: #333;
+        margin-bottom: 10px;
+        transform: scale(1.04);
+        transition-duration: 250ms;
+    }
+
+    /* NAV BAR CSS */
+
+    .navbar-collapse {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    nav a:active {
+        background-color: #ffff00;
+        text-decoration: underline;
+    } 
+
+    /* ABOUT PAGE CSS */
+    .about h1, .about p{
+        margin-right: 400px;
+    }
+
+    .headshot {
+        position: absolute;
+        margin-left: 725px;
+        margin-top: -85px;
+        width: 350px;
+    }
+
+    .connect-area {
+        margin-left: 300px;
+        margin-right: 300px;
+        padding-left: 30px;
+        padding-top: 25px;
+        margin-bottom: 50px;
+        margin-top: 0px;
+    } 
+
+    /* DP1 PAGE CSS */
+
+    #HL-main h2 {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    .HL-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .HL-description div {
+        padding-right: 40px;
+    }
+
+    .dp1-timeline {
+        margin-left: 160px;
+    }
+
+    .dp1-skills {
+        margin-left: 230px;
+        margin-right: 200px;
+    }
+
+    .HL-description-description {
+        margin-left: 230px;
+        margin-right: 130px;
+    }
+
+    .line-break-page-mobile {
+        display: none;
+    }
+
+    .line-break-page-desktop {
+        display: inline;
+        margin-left: 275px;
+    }
+
+    .dp1sketches-description p{
+        padding-top: 2px;
+        margin-left: 270px;
+        margin-right: 250px;
+    }
+    
+    .dp1sketches-description h3 {
+        margin-left: 230px;
+        margin-top: 25px;
+    }
+    
+    .dp1-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    .dp1sketches-search {
+        margin-top: -40px;
+        margin-left: 30px;
+    }
+
+    .dp1sketches-message {
+        margin-left: 10px;
+    }
+
+    .dp1wireframing-description {
+        margin-left: 230px;
+        margin-right: 220px;
+    }
+
+    .dp1wireframes-img {
+        width: 200px;
+    }
+
+    .dp1wireframes-feed {
+        margin-left: 250px;
+        margin-right: 30px;
+    }
+
+    .dp1-figma-prototype {
+        width: 350px;
+        height: 650px;
+        margin-left: 550px;
+    }
+
+    .dp1-prototype h3 {
+        margin-top: 25px;
+        margin-left: 470px;
+    }
+
+    .dp1-prototype p {
+        margin-left: 510px;
+        margin-right: 500px;
+    }
+
+    /* GHP PAGE CSS */
+
+    #GHP-main h2 {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    .GHP-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        text-align: left;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 20px;
+    }
+
+    .GHP-timeline {
+        margin-left: 80px;
+    }
+
+    .GHP-roles {
+        margin-left: 40px;
+        margin-right: 175px;
+    }
+
+    .GHP-tools {
+        margin-left: 75px;
+    }
+
+    .GHP-skills {
+        margin-left: 140px;
+    }
+
+    .GHP-description-description {
+        margin-left: 90px;
+    }
+
+    .GHP-before-and-after {
+        margin-left: 285px;
+        margin-right: 20px;
+    }
+
+    .GHP-logo-before-and-after h3, .GHP-logo-before-and-after p {
+        margin-left: 245px;
+    }
+
+    .GHP-logos img{
+        display: flex;
+        flex-direction: row;
+        margin-left: 475px;
+        gap: 40px;
+    }
+
+    .GHP-logos p {
+        left: 30%;
+    }
+
+    .GHP-temporary-links-old {
+        margin-top: 15px;
+    }
+
 }
 
-
-@media screen and (min-width: 850px){
+@media screen and (min-width: 1370px) {
     .mia {
         color: #333;
         display: flex;
@@ -996,7 +1220,6 @@ footer {
         bottom: 0px;
         left: 0px;
     }
-
 }
 
 @media (prefers-reduced-motion) { 
