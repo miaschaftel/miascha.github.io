@@ -722,7 +722,7 @@ footer {
     object-fit: cover;
 }
 
-@media screen and (min-width: 768px){
+@media only screen and (min-width: 768px){
     .mia {
         color: #333;
         display: flex;
@@ -942,7 +942,7 @@ footer {
 
 }
 
-@media screen and (min-width: 1370px) {
+@media only screen and (min-width: 1370px) {
     .mia {
         color: #333;
         display: flex;
