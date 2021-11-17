@@ -15,7 +15,7 @@
   <body>
     <div class="skip"><a href="#about">Skip to Main Content</a></div>
      
-    <nav class="navbar navbar-expand-sm visible-xs">
+    <nav class="navbar navbar-expand-sm visible-xs" id="mobile-screen-nav">
         <a href="index.html" class="mia"> Mia Schaftel</a>
       <button aria-label="Nav Button" class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#navbarMenu">
           <span class="navbar-toggler-icon"></span>
@@ -26,78 +26,77 @@
           <li><a href="about.html" class="current">ABOUT</a></li>
           <li><a href="dp1.html">HAPPYLIVING</a></li>
           <li><a href="greyhome.html">GREYHOME PARTNERS</a></li>
-          <li><a href="https://drive.google.com/file/d/16FijYUQ8rlL6J7Fo8YOLclyNiIgTgczB/view?usp=sharing">RESUMÉ</a></li>
+          <li><a href="https://drive.google.com/file/d/1i8fm99RRG4NItjY819dkUyemfQZWgliC/view?usp=sharing">RESUMÉ</a></li>
           <!-- <li><a href="projects.html">PROJECTS</a></li> -->
         </ul>
       </div>
     </nav>
 
-    <!-- <div class="skip"><a href="#main">Skip to Main Content</a></div>
-    <nav>
+    <nav id="full-screen-nav">
         <a href="index.html" class="mia"> Mia Schaftel</a>
         <ul>
           <li><a href="index.html">WELCOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="https://drive.google.com/file/d/1CN23xVaLtyXxLhx1dMg2hg5zRhW8SbKM/view?usp=sharing">RESUMÉ</a></li>
+          <li><a href="about.html" class="current">ABOUT</a></li>
+          <li><a href="https://drive.google.com/file/d/1i8fm99RRG4NItjY819dkUyemfQZWgliC/view?usp=sharing">RESUMÉ</a></li>
           <li><div class="dropdown">
-            <button class="dropbtn">PROJECTS
-            </button>
+            <button class="dropbtn">PROJECTS</button>
             <div class="dropdown-content">
                 <a href="dp1.html">HAPPYLIVING</a>
                 <a href="greyhome.html">Greyhome Partners</a>
-                <a href="dp2.html">Digital Production Design Project 2</a>
+                <!-- <a href="dp2.html">Digital Production Design Project 2</a> -->
             </div>
-        </li></div>
+          </li></div>
         </ul>
-    </nav> -->
+    </nav> 
 
     <main class="container">
-        <header class="about" id="about">
-            <h1>ABOUT</h1>
-                <p> I am a junior studying User Experience (UX) Design in the School of Information
-                    and on the Cappo Sales Track through the Ross Business School at the University of Michigan.
-                    Through my coursework I have become experienced with Python, HTML, CSS, JavaScript,
-                    and SQLite, among others. This fall I am learning more about front-end programming 
-                    for web design using the POUR design principles of accessible 
-                    design. I am learning about digital product design using Sketch, InVision, Figma, and other
-                    industry-standard tools, as well as continuing to learn about data analysis and data manipulation
-                    using Python. <br>
-                    <br>
-                    <p id="about-ipad-change">On campus I'm involved in organizations such as Michigan Business Women, the Ross Retail Club, 
-                    the Ross Sales Club, and Alpha Phi International Fraternity. <br>
-                    <br>
-                    I am passionate about creating products and experiences that are transformative and accessible
-                    for users. My past experiences in UX/UI Design, Sales Planning, and 
-                    Product and Business Development provide me with a distinct set of strengths and skills 
-                    which allow me to have a unique perspective in the product development and 
-                    user experience design process. </p>
-                </p>
-                <img class="headshot" src="../imgs/headshot.jpg" alt="Headshot of Mia Schaftel">
-        </header>
-        <div class="courses">
-            <div class="umsi-courses">
-                <h2> Relevant Coursework: University of Michigan - School of Information (2021-Present)</h2>
-                <ul>
-                    <li><a id="si-one" href="https://www.si.umich.edu/programs/courses/106">SI106: Programs, Information, and People (First-level Python Course)</a></li>
-                    <li><a href="https://www.si.umich.edu/programs/courses/110">SI110: Introduction to Information Studies</a></li>
-                    <li><a href="https://www.si.umich.edu/programs/courses/206">SI206: Data-Oriented Programming (Second-level Python Course)</a></li>
-                    <li><a href="https://www.si.umich.edu/programs/courses/310">SI310: Information Environments and Work</a></li>
-                    <li><a href="https://www.si.umich.edu/programs/courses/339">SI339: Web Design, Development, and Accessibility</a></li>
-                    <li><a href="https://www.si.umich.edu/programs/courses/364">SI364: Building Data Driven Applications</a></li>
-                </ul>
-            </div>
-            <br>
-            <div class="lsa-courses">
-                <h2> Relevant Coursework: University of Michigan - College of Literature, Science, and the Arts (2019-2021)</h2>
-                <ul>
-                    <li><a href="https://lsa.umich.edu/stats/undergraduate-students/statistics-courses.html">STATS250: Introduction to Statistics and Data Analysis</a> </li>
-                    <li><a href="https://lsa.umich.edu/weinberginstitute/undergraduates/prospective-students/cogsci-200.html">COGSCI200: Introduction to Cognitive Science</a> </li>
-                    <li><a href="https://michiganross.umich.edu/courses/retail-marketing-management-2890">MKT312: Retail Market Management</a></li>
-                    <li><a href="https://cfe.umich.edu/course-descriptions/">ENTR390: Digital Production Design</a></li>
-                </ul>
+        <div class="about-container">
+            <header class="about" id="about">
+                <h1 class="about-ipad">ABOUT</h1>
+                    <p class="about-ipad"> I am a junior studying User Experience (UX) Design in the School of Information
+                        and on the Cappo Sales Track through the Ross Business School at the University of Michigan.
+                        Through my coursework I have become experienced with Python, HTML, CSS, JavaScript,
+                        and SQLite, among others. This fall I am learning more about front-end programming 
+                        for web design using the POUR design principles of accessible 
+                        design. I am learning about digital product design using Sketch, InVision, Figma, and other
+                        industry-standard tools, as well as continuing to learn about data analysis and data manipulation
+                        using Python. <br>
+                        <br>
+                        <p id="about-ipad-change">On campus I'm involved in organizations such as Michigan Business Women, the Ross Retail Club, 
+                        the Ross Sales Club, and Alpha Phi International Fraternity. <br>
+                        <br>
+                        I am passionate about creating products and experiences that are transformative and accessible
+                        for users. My past experiences in UX/UI Design, Sales Planning, and 
+                        Product and Business Development provide me with a distinct set of strengths and skills 
+                        which allow me to have a unique perspective in the product development and 
+                        user experience design process. </p>
+                    </p>
+            </header>
+            <img class="headshot" src="../imgs/headshot.jpg" alt="Headshot of Mia Schaftel">
+            <div class="courses">
+                <div class="umsi-courses">
+                    <h2> Relevant Coursework: University of Michigan - School of Information (2021-Present)</h2>
+                    <ul>
+                        <li><a id="si-one" href="https://www.si.umich.edu/programs/courses/106">SI106: Programs, Information, and People (First-level Python Course)</a></li>
+                        <li><a href="https://www.si.umich.edu/programs/courses/110">SI110: Introduction to Information Studies</a></li>
+                        <li><a href="https://www.si.umich.edu/programs/courses/206">SI206: Data-Oriented Programming (Second-level Python Course)</a></li>
+                        <li><a href="https://www.si.umich.edu/programs/courses/310">SI310: Information Environments and Work</a></li>
+                        <li><a href="https://www.si.umich.edu/programs/courses/339">SI339: Web Design, Development, and Accessibility</a></li>
+                        <li><a href="https://www.si.umich.edu/programs/courses/364">SI364: Building Data Driven Applications</a></li>
+                    </ul>
+                </div>
+                <br>
+                <div class="lsa-courses">
+                    <h2> Relevant Coursework: University of Michigan - College of Literature, Science, and the Arts (2019-2021)</h2>
+                    <ul>
+                        <li><a href="https://lsa.umich.edu/stats/undergraduate-students/statistics-courses.html">STATS250: Introduction to Statistics and Data Analysis</a> </li>
+                        <li><a href="https://lsa.umich.edu/weinberginstitute/undergraduates/prospective-students/cogsci-200.html">COGSCI200: Introduction to Cognitive Science</a> </li>
+                        <li><a href="https://michiganross.umich.edu/courses/retail-marketing-management-2890">MKT312: Retail Market Management</a></li>
+                        <li><a href="https://cfe.umich.edu/course-descriptions/">ENTR390: Digital Production Design</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-
         <div class="connect-area">
             <h2>Contact Information</h2>
             <p>
