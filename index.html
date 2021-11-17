@@ -15,7 +15,7 @@
   <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
     
-    <nav class="navbar navbar-expand-sm visible-xs">
+    <nav class="navbar navbar-expand-sm visible-xs" id="mobile-screen-nav">
       <a href="index.html" class="mia">Mia Schaftel</a>
       <button aria-label="Nav Button" class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#navbarMenu">
           <span class="navbar-toggler-icon"></span>
@@ -26,11 +26,28 @@
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="dp1.html">HAPPYLIVING</a></li>
           <li><a href="greyhome.html">GREYHOME PARTNERS</a></li>
-          <li><a href="https://drive.google.com/file/d/16FijYUQ8rlL6J7Fo8YOLclyNiIgTgczB/view?usp=sharing">RESUMÉ</a></li>
+          <li><a href="https://drive.google.com/file/d/1i8fm99RRG4NItjY819dkUyemfQZWgliC/view?usp=sharing">RESUMÉ</a></li>
           <!-- <li><a href="projects.html">PROJECTS</a></li> -->
         </ul>
       </div>
     </nav>
+
+    <nav id="full-screen-nav">
+        <a href="index.html" class="mia"> Mia Schaftel</a>
+        <ul>
+          <li><a href="index.html" class="current">WELCOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="https://drive.google.com/file/d/1i8fm99RRG4NItjY819dkUyemfQZWgliC/view?usp=sharing">RESUMÉ</a></li>
+          <li><div class="dropdown">
+            <button class="dropbtn">PROJECTS</button>
+            <div class="dropdown-content">
+                <a href="dp1.html">HAPPYLIVING</a>
+                <a href="greyhome.html">Greyhome Partners</a>
+                <!-- <a href="dp2.html">Digital Production Design Project 2</a> -->
+            </div>
+          </li></div>
+        </ul>
+    </nav> 
 
 
 
@@ -77,11 +94,12 @@
         
   </main>
     <footer>
-        <div class="footer description">
+        <div class="footer-description">
             <p>Designed and implemented by Mia Schaftel <br>
             University of Michigan - School of Information Class of 2023 <br>
             © 2021 Mia Schaftel</p>
         </div>
+        
         <div class="socials">
             <a href="https://www.linkedin.com/in/miaschaftel/">
             <img src="imgs/linkedin.png" alt="Link within image to external LinkedIn Profile"/>
