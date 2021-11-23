@@ -132,7 +132,6 @@ nav a:hover {
     width: 250px;
 }
 
-
 .dp1-grid-item {
     position: relative;
     text-align: center;
@@ -228,6 +227,10 @@ nav a:hover {
     margin: auto;
 }
 
+#bighousefriends {
+    display: none;
+}
+
 .about {
     padding-top: 10px;
     display: flex;
@@ -280,8 +283,12 @@ nav a:hover {
 .courses ul li a:hover {
     background-color: #ffff00;
     color: #333;
-    padding-right: 35px;
+    padding-right: 30px;
     text-decoration-line: underline;
+}
+
+#si-one:hover {
+    padding-right: 6.5px;
 }
 
 .courses li a:visited {
@@ -338,13 +345,14 @@ nav a:hover {
 }
 
 #HL-main h1 {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     font-size: 2em;
 }
 
 #HL-main h2 {
     font-size: 1.10em;
+    margin-bottom: 15px;
 }
 
 .HL-container h3 {
@@ -361,7 +369,7 @@ nav a:hover {
 #HL-main img {
     border-radius: 20px;
     margin: auto;
-    width: 250px;
+    width: 300px;
     padding: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -436,7 +444,7 @@ nav a:hover {
 }
 
 .dp1wireframes-feed {
-    margin-left: 65px;
+    margin-left: 35px;
     margin-bottom: 50px;
 }
 
@@ -475,7 +483,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-right: 30px;
+    margin: auto;
 }
 
 #GHP-main h1 {
@@ -494,19 +502,20 @@ nav a:hover {
 }
 
 #GHP-main h2 {
-    font-size: 1.10em;
-    margin-right: 25px;
+    font-size: 1em;
     font-style: normal;
     text-align: center;
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #GHP-main img {
     border-radius: 20px;
-    margin: 10px;
+    margin: auto;
     width: 300px;
-    padding: 5px;
-    margin-left: 10px;
+    /* padding: 5px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .GHP-description {
@@ -516,25 +525,17 @@ nav a:hover {
     align-items: center;
     text-align: center;
     padding-top: 12px;
-    padding-bottom: 20px;
+    margin: auto;
     margin-left: 40px;
-    margin-right: 30px;
-}
-
-.GHP-description-description {
-    margin-bottom: 0px;
+    margin-right: 40px;
 }
 
 .GHP-description-description h3{
     padding-top: 10px;
 }
 
-.GHP-timeline p {
-    margin-bottom: 2px;
-}
-
-.GHP-timeline {
-    margin-bottom: 20px;
+.GHP-description div {
+    padding-bottom: 3px;
 }
 
 .line-break-page-mobile {
@@ -549,18 +550,37 @@ nav a:hover {
     display: none;
 }
 
-.GHP-before-and-after {
-    padding-top: 15px;
-    padding-bottom: 20px;
+.GHP-temporary-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 45px;
+    margin-right: 30px;
+    color: #333;
+}
+
+.GHP-temporary-links a {
+    color: #333;
+}
+
+.GHP-temporary-links a:visited {
+  color: #333;
+}
+
+.GHP-temporary-links-new {
+    margin-top: 15px;
+}
+
+.GHP-logo-before-and-after {
+    margin-bottom: 20px;
     margin-left: 40px;
     margin-right: 30px;
 }
 
-.GHP-logo-before-and-after {
-    padding-top: 12px;
-    padding-bottom: 20px;
-    margin-left: 40px;
-    margin-right: 30px;
+.GHP-logo-before-and-after h3 {
+    margin-bottom: 5px;
 }
 
 .GHP-logo-old-img, .GHP-logo-new-img {
@@ -570,15 +590,13 @@ nav a:hover {
     margin-top: 5px;
 }
 
-.GHP-logo-new-img {
-    margin-bottom: 15px;
+.GHP-logos p {
+    font-size: .85em;
+    font-weight: 500;
+    text-align: center;
 }
 
-.GHP-logo-old-img {
-    margin-bottom: 10px;
-}
-
-.GHP-logos img{
+.GHP-logos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -586,71 +604,26 @@ nav a:hover {
 }
 
 .GHP-logos-old {
-    position: relative;
-    text-align: center;
-    margin-bottom: 90px;
+    padding: 20px;
+    border: 7px solid;
+    border-image: linear-gradient(45deg, #ffff00, rgb(255, 222, 9)) 1;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-
-.GHP-logos-old p {
-    position: absolute;
-    font-size: .85em;
-    top: 140%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-decoration: underline;
-    font-style: italic;
-    font-weight: bold;
-    color: #000;
-  }
 
 .GHP-logos-new {
-    position: relative;
-    text-align: center;
-    margin-bottom: 70px;
+    padding: 20px;
+    border: 7px solid;
+    border-image: linear-gradient(45deg, #ffff00, rgb(255, 222, 9)) 1;
+    margin-bottom: 15px;
 }
-
-.GHP-logos-new p {
-    position: absolute;
-    font-size: .85em;
-    top: 140%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-decoration: underline;
-    font-style: italic;
-    font-weight: bold;
-    color: #000;
-  }
-
-  .GHP-temporary-links {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-left: 50px;
-      margin-right: 20px;
-      color: #333;
-  }
-
-  .GHP-temporary-links a {
-      color: #333;
-  }
-
-  .GHP-temporary-links a:visited {
-    color: #333;
-}
-
-  .GHP-temporary-links-new {
-      margin-top: 15px;
-  }
-
 
 /* FOOTER CSS */
 
 footer {
     background-color: #ffff00;
     color: #333;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 1em;
     padding: 15px;
     text-align: center;
@@ -675,8 +648,8 @@ footer {
 
     .mia {
         background-color: #CEE7E6;
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 5em;
+        padding-right: 5em;
         margin-bottom: 5px;
     }
     
@@ -736,7 +709,6 @@ footer {
     /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {
         display: block;
-    
     }
     
     /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -749,13 +721,10 @@ footer {
         color: #CEE7E6;
         background-color: #333;
         text-decoration: underline;
-    }
-
-    .navbar-collapse {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 1px;
+        padding-bottom: 1px;
     }
 
     nav ul {
@@ -790,6 +759,18 @@ footer {
     }
 
     /* HOMEPAGE CSS */
+
+    .projectgrid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .dp1-grid-item {
+        margin-bottom: 0px;
+    }
 
     #dp1-text {
         background-color: #CEE7E6;
@@ -829,18 +810,23 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 
-    .about h1, .about-ipad{
-        grid-column: 1 / 1;
-    }
-
-    #about-ipad-change {
-        grid-column: 1 / 4;
+    .about h1, .about-ipad {
+        grid-column: 1 / 2;
     }
 
     .headshot {
         grid-column: 2 / 2;
-        margin-top: 70px;
-        width: 275px;
+        margin-top: 65px;
+        width: 300px;
+    }
+
+    #bighousefriends {
+        display: inline;
+        position: absolute;
+        width: 300px;
+        border-radius: 20px;
+        margin-left: 368px;
+        margin-top: 540px;
     }
 
     .courses {
@@ -850,7 +836,6 @@ footer {
     .courses ul li a:hover {
         background-color: #CEE7E6;
     }
-
 
     .connect-area {
         margin-left: 100px;
@@ -864,6 +849,7 @@ footer {
     /* DP1 PAGE CSS */
 
     #HL-main h2 {
+        text-align: center;
         margin-left: 130px;
         margin-right: 130px;
     }
@@ -875,23 +861,19 @@ footer {
         align-items: baseline;
         flex-wrap: wrap;
         text-align: left;
-        margin-top: 20px;
         margin-left: 100px;
         margin-right: 100px;
     }
-
-    .HL-description div {
-        margin-right: 40px;
-    }
-
+    
     .dp1sketches-description p{
         padding-top: 2px;
         margin-left: 100px;
-        margin-right: 140px;
+        margin-right: 120px;
+        margin-bottom: 10px;
     }
     
     .dp1sketches-description h3 {
-        margin-left: 60px;
+        margin-left: 100px;
         margin-top: 25px;
     }
     
@@ -915,8 +897,8 @@ footer {
     }
 
     .dp1wireframing-description {
-        margin-left: 60px;
-        margin-right: 100px;
+        margin-left: 50px;
+        margin-right: 80px;
     }
 
     .dp1wireframes-img {
@@ -924,11 +906,11 @@ footer {
     }
 
     .dp1wireframes-feed {
-        margin-left: 50px;
+        margin-left: 150px;
         margin-right: 30px;
     }
 
-    .dp1-figma-prototype {
+    /* .dp1-figma-prototype {
         width: 350px;
         height: 650px;
         margin-left: 25%;
@@ -943,76 +925,80 @@ footer {
     .dp1-prototype p {
         margin-left: 100px;
         margin-right: 100px;
-    }
+    } */
+
 
     /* GHP PAGE CSS */
 
     #GHP-main h2 {
-        margin-left: 300px;
-        margin-right: 300px;
+        text-align: center;
+        margin-left: 120px;
+        margin-right: 120px;
     }
 
     .GHP-description {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: baseline;
         flex-wrap: wrap;
         text-align: left;
-        margin-left: 200px;
-        margin-right: 200px;
-        margin-top: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 
-    .GHP-timeline {
-        margin-left: 0px;
-    }
-
-    .GHP-roles {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .GHP-tools {
-        margin-left: 75px;
-    }
-
-    .GHP-skills {
-        margin-left: 140px;
-    }
-
-    .GHP-description-description {
-        margin-left: 90px;
-    }
-
-    .GHP-before-and-after {
-        margin-left: 285px;
-        margin-right: 20px;
-    }
-
-    .GHP-logo-before-and-after h3, .GHP-logo-before-and-after p {
-        margin-left: 245px;
+    .GHP-logo-before-and-after h3, 
+    .GHP-logo-before-and-after p {
+        margin-left: 60px;
     }
 
     .GHP-logos img{
         display: flex;
         flex-direction: row;
-        margin-left: 475px;
         gap: 40px;
-    }
-
-    .GHP-logos p {
-        left: 30%;
+        width: 350px;
     }
 
     .GHP-temporary-links-old {
-        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     footer {
         background-color: #CEE7E6;
     }
 
+}
+
+@media only screen and (min-width: 1024px){
+    /* ABOUT PAGE CSS */
+    .umsi-courses {
+        margin-right: 400px;
+    }
+    
+    .lsa-courses {
+        position: absolute;
+        margin-left: 520px;
+        margin-right: 80px;
+        margin-top: 15px;
+    }
+
+    .connect-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 10px;
+        margin-left: 235px;
+        margin-right: 235px;
+    }
+
+    .connect-area h2 {
+        font-size: 1.2em;
+    }
+
+    .connect-area p {
+        font-size: 1.05em;
+    }
 }
 
 
@@ -1033,7 +1019,6 @@ footer {
     .dp2-grid-item:hover {
         transform: none;
     }
-    
 }
 
 
