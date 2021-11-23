@@ -404,10 +404,6 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-/* .HLPrototpyeWide {
-    display: none;
-} */
-
 .HL-description {
     display: flex;
     flex-direction: column;
@@ -547,14 +543,9 @@ nav a:hover {
     border-radius: 20px;
     margin: auto;
     width: 300px;
-    /* padding: 5px; */
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-/* .GHPSiteWide {
-    display: none;
-} */
 
 .GHP-description {
     display: flex;
@@ -689,7 +680,6 @@ footer {
     /* NAV BAR CSS */
     nav a:hover {
         background-color: #CEE7E6;
-        color: #333;
     }
 
     /* Dropdown Button */
@@ -787,10 +777,6 @@ footer {
     /* HOMEPAGE CSS */
 
     .projectgrid {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         gap: 9px;
     }
 
@@ -801,28 +787,13 @@ footer {
     #dp1-text {
         background-color: #CEE7E6;
     }
-      
-    .dp1-grid-item:hover{
-        background-color: #ffff00;
-        box-shadow: 2px 8px 16px 2px rgba(255, 255, 0, 1);
-    }
 
     #ghp-text {
         background-color: #CEE7E6;
     }
-      
-    .ghp-grid-item:hover{
-        background-color: #ffff00;
-        box-shadow: 2px 8px 16px 2px rgba(255, 255, 0, 1);
-    }
 
     #dp2-text {
         background-color: #CEE7E6;
-    }
-      
-    .dp2-grid-item:hover{
-        background-color: #ffff00;
-        box-shadow: 2px 8px 16px 2px rgba(255, 255, 0, 1);
     }
 
     /* ABOUT PAGE CSS */
@@ -836,7 +807,7 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
 
-    .about h1, .about-ipad {
+    .about {
         grid-column: 1 / 2;
     }
 
@@ -899,14 +870,6 @@ footer {
         margin-right: 130px;
     }
 
-    /* .HLPrototpyeNormal {
-        display: none;
-    }
-
-    .HLPrototpyeWide {
-        display: inline;
-    } */
-
     #HL-main img:hover{
         transform: scale(1.05); 
         transition-duration: .4s;
@@ -916,11 +879,7 @@ footer {
     }
 
     .HL-description {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: baseline;
-        flex-wrap: wrap;
         text-align: left;
         margin-left: 100px;
         margin-right: 100px;
@@ -997,20 +956,8 @@ footer {
         margin-right: 120px;
     }
 
-    /* .GHPSiteNormal {
-        display: none;
-    }
-
-    .GHPSiteWide {
-        display: inline;
-    } */
-
     .GHP-description {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: baseline;
-        flex-wrap: wrap;
         text-align: left;
         margin-left: 100px;
         margin-right: 100px;
@@ -1021,7 +968,7 @@ footer {
         margin-left: 60px;
     }
 
-    .GHP-logos img{
+    .GHP-logos img {
         display: flex;
         flex-direction: row;
         gap: 40px;
