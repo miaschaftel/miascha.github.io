@@ -375,6 +375,10 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+/* .HLPrototpyeWide {
+    display: none;
+} */
+
 .HL-description {
     display: flex;
     flex-direction: column;
@@ -397,6 +401,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .line-break-page-desktop {
@@ -518,6 +523,10 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
+/* .GHPSiteWide {
+    display: none;
+} */
+
 .GHP-description {
     display: flex;
     flex-direction: column;
@@ -536,18 +545,6 @@ nav a:hover {
 
 .GHP-description div {
     padding-bottom: 3px;
-}
-
-.line-break-page-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.line-break-page-desktop {
-    display: none;
 }
 
 .GHP-temporary-links {
@@ -765,7 +762,7 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 7px;
+        gap: 9px;
     }
 
     .dp1-grid-item {
@@ -777,8 +774,8 @@ footer {
     }
       
     .dp1-grid-item:hover{
-        background-color: #CEE7E6;
-        box-shadow: 2px 8px 16px 2px #CEE7E6;
+        background-color: #ffff00;
+        box-shadow: 2px 8px 16px 2px rgba(255, 255, 0, 1);
     }
 
     #ghp-text {
@@ -786,8 +783,8 @@ footer {
     }
       
     .ghp-grid-item:hover{
-        background-color: #CEE7E6;
-        box-shadow: 2px 8px 16px 2px #CEE7E6;
+        background-color: #ffff00;
+        box-shadow: 2px 8px 16px 2px rgba(255, 255, 0, 1);
     }
 
     #dp2-text {
@@ -795,8 +792,8 @@ footer {
     }
       
     .dp2-grid-item:hover{
-        background-color: #CEE7E6;
-        box-shadow: 2px 8px 16px 2px #CEE7E6;
+        background-color: #ffff00;
+        box-shadow: 2px 8px 16px 2px rgba(255, 255, 0, 1);
     }
 
     /* ABOUT PAGE CSS */
@@ -852,6 +849,22 @@ footer {
         text-align: center;
         margin-left: 130px;
         margin-right: 130px;
+    }
+
+    /* .HLPrototpyeNormal {
+        display: none;
+    }
+
+    .HLPrototpyeWide {
+        display: inline;
+    } */
+
+    #HL-main img:hover{
+        transform: scale(1.05); 
+        transition-duration: .4s;
+        background-color: rgba(255, 255, 0, 1);
+        box-shadow: 2px 8px 16px 2px rgba(255, 255, 0, 1);
+        border-radius: 20px;
     }
 
     .HL-description {
@@ -936,6 +949,14 @@ footer {
         margin-right: 120px;
     }
 
+    /* .GHPSiteNormal {
+        display: none;
+    }
+
+    .GHPSiteWide {
+        display: inline;
+    } */
+
     .GHP-description {
         display: flex;
         flex-direction: column;
@@ -971,6 +992,10 @@ footer {
 
 @media only screen and (min-width: 1024px){
     /* ABOUT PAGE CSS */
+    #bighousefriends {
+        margin-left: 548px;
+    }
+
     .umsi-courses {
         margin-right: 400px;
     }
@@ -998,6 +1023,20 @@ footer {
 
     .connect-area p {
         font-size: 1.05em;
+    }
+
+    /* DP1 PAGE CSS */
+
+    .dp1-skills {
+        position: absolute;
+        margin-left: 450px;
+        margin-right: 100px;
+        margin-top: -375px;
+    }
+
+    .dp1-images {
+        margin-left: 200px;
+        margin-right: 200px;
     }
 }
 
