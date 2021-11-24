@@ -1019,6 +1019,9 @@ footer {
         font-size: 1.05em;
     }
 
+}
+
+@media only screen and (min-width: 1440px){
     /* DP1 PAGE CSS */
 
     .dp1-skills {
@@ -1048,10 +1051,6 @@ footer {
     .GHP-skills {
         margin-top: -455px;
     }
-
-}
-
-@media only screen and (min-width: 1024px){
     
 }
 
