@@ -1026,12 +1026,28 @@ footer {
         position: absolute;
         margin-left: 450px;
         margin-right: 100px;
-        margin-top: -375px;
+        margin-top: -350px;
     }
 
     .dp1-images {
-        margin-left: 200px;
-        margin-right: 200px;
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+
+    .dp1wireframes-feed {
+        margin-left: 350px;
+    }
+
+    /* GHP PAGE CSS */
+    .GHP-tools, .GHP-skills {
+        position: absolute;
+        margin-left: 500px;
+        margin-right: 150px;
+        margin-top: -730px;
+    }
+
+    .GHP-skills {
+        margin-top: -455px;
     }
 }
 
