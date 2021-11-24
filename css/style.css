@@ -983,9 +983,8 @@ footer {
         background-color: #CEE7E6;
     }
 
-}
 
-@media only screen and (min-width: 1024px){
+
     /* ABOUT PAGE CSS */
     #bighousefriends {
         margin-left: 548px;
@@ -1049,6 +1048,11 @@ footer {
     .GHP-skills {
         margin-top: -455px;
     }
+
+}
+
+@media only screen and (min-width: 1024px){
+    
 }
 
 
