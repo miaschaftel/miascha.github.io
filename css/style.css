@@ -493,6 +493,13 @@ nav a:hover {
 
 /* GHP PAGE CSS */
 
+.GHPSite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #GHP-logo {
     margin: 10px;
     width: 100px;
@@ -957,7 +964,7 @@ footer {
     /* GHP PAGE CSS */
 
     .ghp-skills {
-        margin-top: -900px;
+        margin-top: -820px;
     }
 
     .GHP-logo-before-and-after h3,
