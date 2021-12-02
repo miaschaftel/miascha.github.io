@@ -493,12 +493,14 @@ nav a:hover {
 
 /* GHP PAGE CSS */
 
-.GHPSite {
+.ghp-main, .GHPSite {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+
 
 #GHP-logo {
     margin: 10px;
