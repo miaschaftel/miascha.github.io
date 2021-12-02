@@ -937,12 +937,12 @@ footer {
 
     .dp1sketches-search {
         margin-top: 0px;
-        margin-left: 0px;
+        margin-left: -5px;
     }
 
     .dp1-images {
-        margin-left: -350px;
-        margin-right: -350px;
+        margin-left: none;
+        margin-right: none;
     }
 
     /* .dp1wireframes-feed {
