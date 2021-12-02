@@ -95,7 +95,7 @@ nav a:hover {
 
 /* HOMEPAGE CSS */
 
-#main {
+#home-main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -137,7 +137,7 @@ nav a:hover {
     text-align: center;
     padding: 0.75%;
     margin-bottom: 15px;
-  }
+}
 
 #dp1-text {
     position: absolute;
@@ -165,7 +165,8 @@ nav a:hover {
     position: relative;
     text-align: center;
     padding: 0.75%;
-  }
+    margin-bottom: 15px;
+}
 
 #ghp-text {
     position: absolute;
@@ -203,10 +204,10 @@ nav a:hover {
     text-decoration: none;
     color: #333;
     font-size: 1.4em;
-    background-color: rgba(255, 255, 0, 0.85);
-    padding-top: 3px;
-    padding-bottom: 3px;
-    width: 300px;
+    background-color: rgba(255, 255, 0, 1);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    width: 250px;
 }
   
 .dp2-grid-item:hover{
@@ -354,9 +355,9 @@ nav a:hover {
     border-image: linear-gradient(45deg, #ffff00, rgb(255, 222, 9)) 1;
 }
 
-/* DP1 PAGE CSS */
+/* PROJECTS CSS */
 
-#HL-main {
+#main {
     padding-top: 10px;
     display: flex;
     flex-direction: column;
@@ -365,29 +366,29 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-#HL-main h1 {
+#main h1 {
     margin-bottom: 15px;
     margin-top: 15px;
     font-size: 2em;
 }
 
-#HL-main h2 {
+#main h2 {
     font-size: 1.10em;
     margin-bottom: 15px;
 }
 
-.HL-container h3 {
+.container h3 {
     font-size: 1.10em;
 }
 
-#HL-main h1, #HL-main h2 {
+#main h1, #main h2 {
     margin-right: 25px;
     margin-left: 25px;
     font-style: normal;
     text-align: center;
 }
 
-#HL-main img {
+#main img {
     border-radius: 20px;
     margin: auto;
     width: 300px;
@@ -396,7 +397,7 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.HL-description {
+.description {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -409,7 +410,7 @@ nav a:hover {
     margin-right: 40px;
 }
 
-.HL-description-description h3{
+.description-description h3{
     padding-top: 10px;
 }
 
@@ -425,13 +426,13 @@ nav a:hover {
     display: none;
 }
 
-.dp1sketches-description p{
+.sketches-description p{
     padding-top: 12px;
     margin-left: 45px;
     margin-right: 45px;
 }
 
-.dp1sketches-description h3 {
+.sketches-description h3 {
     margin-left: 45px;
 }
 
@@ -447,19 +448,19 @@ nav a:hover {
     width: 150px;
 }
 
-.dp1wireframing-description p {
+.wireframing-description p {
     margin-top: 12px;
     padding-bottom: 15px;
     margin-left: 45px;
     margin-right: 40px;
 }
 
-.dp1wireframing-description h3 {
+.wireframing-description h3 {
     margin-top: 10px;
     margin-left: 45px;
 }
 
-.dp1wireframing-description img {
+.wireframing-description img {
     width: 150px;
     border: 2px solid #333;
     border-radius: 15px;
@@ -475,12 +476,12 @@ nav a:hover {
     margin-bottom: 50px;
 }
 
-.dp1-prototype div{
-    margin-left: 40px;
+.prototype div{
+    margin-left: 47px;
     margin-right: 30px;
 }
 
-.dp1-figma-prototype {
+.figma-prototype {
     border: 2px solid #333;
     border-radius: 20px;
     width: 200px;
@@ -492,65 +493,9 @@ nav a:hover {
 
 /* GHP PAGE CSS */
 
-#GHP-main {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: auto;
-}
-
-#GHP-main h1 {
-    font-size: .75em;
-    text-align: center;
-    font-weight: bold;
-}
-
 #GHP-logo {
     margin: 10px;
     width: 100px;
-}
-
-.GHP-container h3 {
-    font-size: 1.10em;
-}
-
-#GHP-main h2 {
-    font-size: 1em;
-    font-style: normal;
-    text-align: center;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-#GHP-main img {
-    border-radius: 20px;
-    margin: auto;
-    width: 300px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.GHP-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 12px;
-    margin: auto;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.GHP-description-description h3{
-    padding-top: 10px;
-}
-
-.GHP-description div {
-    padding-bottom: 3px;
 }
 
 .GHP-temporary-links {
@@ -570,10 +515,6 @@ nav a:hover {
 
 .GHP-temporary-links a:visited {
   color: #333;
-}
-
-.GHP-temporary-links-new {
-    margin-top: 15px;
 }
 
 .GHP-logo-before-and-after {
@@ -762,11 +703,20 @@ footer {
 
     /* HOMEPAGE CSS */
 
+    .home-container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
     .projectgrid {
         gap: 9px;
     }
 
     .dp1-grid-item {
+        margin-bottom: 0px;
+    }
+
+    .ghp-grid-item {
         margin-bottom: 0px;
     }
 
@@ -801,15 +751,6 @@ footer {
         grid-column: 2 / 2;
         margin-top: 65px;
         width: 300px;
-    }
-
-    #bighousefriends {
-        display: inline;
-        position: absolute;
-        width: 300px;
-        border-radius: 20px;
-        margin-left: 368px;
-        margin-top: 540px;
     }
 
     .courses {
@@ -848,15 +789,15 @@ footer {
         border-radius: 20px;
     }
 
-    /* DP1 PAGE CSS */
+    /* PROJECTS CSS */
 
-    #HL-main h2 {
+    #main h2 {
         text-align: center;
         margin-left: 130px;
         margin-right: 130px;
     }
 
-    #HL-main img:hover{
+    #main img:hover{
         transform: scale(1.05); 
         transition-duration: .4s;
         background-color: rgba(255, 255, 0, 1);
@@ -864,21 +805,21 @@ footer {
         border-radius: 20px;
     }
 
-    .HL-description {
+    .description {
         align-items: baseline;
         text-align: left;
         margin-left: 100px;
         margin-right: 100px;
     }
     
-    .dp1sketches-description p{
+    .sketches-description p{
         padding-top: 2px;
         margin-left: 100px;
         margin-right: 120px;
         margin-bottom: 10px;
     }
     
-    .dp1sketches-description h3 {
+    .sketches-description h3 {
         margin-left: 100px;
         margin-top: 25px;
     }
@@ -889,8 +830,8 @@ footer {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin-left: 150px;
-        margin-right: 150px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     .dp1sketches-search {
@@ -902,7 +843,7 @@ footer {
         margin-left: 10px;
     }
 
-    .dp1wireframing-description {
+    .wireframing-description {
         margin-left: 50px;
         margin-right: 80px;
     }
@@ -916,29 +857,16 @@ footer {
         margin-right: 30px;
     }
 
-    .dp1-prototype div{
+    .prototype div{
         margin-left: 90px;
     }
     
-    .dp1-figma-prototype {
+    .figma-prototype {
         margin-left: 290px;
     }
 
 
     /* GHP PAGE CSS */
-
-    #GHP-main h2 {
-        text-align: center;
-        margin-left: 120px;
-        margin-right: 120px;
-    }
-
-    .GHP-description {
-        align-items: baseline;
-        text-align: left;
-        margin-left: 100px;
-        margin-right: 100px;
-    }
 
     .GHP-logo-before-and-after h3, 
     .GHP-logo-before-and-after p {
@@ -960,13 +888,17 @@ footer {
         background-color: #CEE7E6;
     }
 
+}
 
-
-    /* ABOUT PAGE CSS */
-    #bighousefriends {
-        display: none;
+@media only screen and (min-width: 1024px){
+    /* HOMEPAGE CSS */
+    
+    .home-container {
+        margin-left: 100px;
+        margin-right: 100px;
     }
 
+    /* ABOUT PAGE CSS */
     .courses {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -979,8 +911,8 @@ footer {
         justify-content: center;
         align-items: flex-start;
         padding-bottom: 10px;
-        margin-left: 235px;
-        margin-right: 235px;
+        margin-left: 250px;
+        margin-right: 250px;
     }
 
     .connect-area h2 {
@@ -991,69 +923,41 @@ footer {
         font-size: 1.05em;
     }
 
-}
 
-@media only screen and (min-width: 1440px){
-    /* ABOUT PAGE CSS */
+    /* PROJECTS CSS */
 
-
-    /* DP1 PAGE CSS */
-
-    .HL-description {
-        margin-left: 200px;
-        margin-right: 170px;
+    #main img {
+        margin-bottom: 15px;
     }
 
-    .dp1-skills {
+    .skills {
         position: absolute;
-        margin-left: 500px;
-        margin-right: 200px;
-        margin-top: -350px;
+        margin-left: 400px;
+        margin-right: 100px;
+        margin-top: -380px;
     }
 
-    .dp1sketches-description {
+    .dp1-images {
         margin-left: 100px;
         margin-right: 100px;
     }
 
-    .dp1-images {
-        margin-left: 350px;
-        margin-right: 350px;
+    .dp1wireframes-feed {
+        margin-left: 250px;
     }
 
-    .dp1wireframes-feed {
+    .figma-prototype {
         margin-left: 375px;
     }
 
-    .dp1wireframing-description {
-        margin-left: 170px;
-        margin-right: 180px;
-    }
-
-    .dp1-prototype div {
-        margin-left: 230px;
-    }
-
-    .dp1-figma-prototype {
-        margin-left: 600px;
+    .c-skills {
+        margin-top: -360px;
     }
 
     /* GHP PAGE CSS */
 
-    .GHP-description {
-        margin-left: 200px;
-        margin-right: 170px;
-    }
-
-    .GHP-tools, .GHP-skills {
-        position: absolute;
-        margin-left: 500px;
-        margin-right: 150px;
-        margin-top: -640px;
-    }
-
-    .GHP-skills {
-        margin-top: -455px;
+    .ghp-skills {
+        margin-top: -900px;
     }
 
     .GHP-logo-before-and-after h3,
