@@ -582,6 +582,11 @@ footer {
     object-fit: cover;
 }
 
+@keyframes animate {
+    from {background-color: rgba(255, 255, 0, 1);}
+    to {background-color: #CEE7E6;}
+}
+
 @media only screen and (min-width: 768px){
     #mobile-screen-nav {
         display: none;
@@ -860,11 +865,6 @@ footer {
         gap: 20px;
     }
 
-    /* .dp1wireframes-feed {
-        margin-left: 150px;
-        margin-right: 30px;
-    } */
-
     .prototype div{
         margin-left: 90px;
     }
@@ -902,10 +902,20 @@ footer {
     }
 
     /* ABOUT PAGE CSS */
+    .about header {
+        background-image:  url("../imgs/headshot.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* Parallax effect */
+        background-position: center; /* Parallax effect */
+        background-size: cover; /* Parallax effect */
+        color: white;
+        height: 200px; /* Parallax effect */
+      }
+
     .courses {
         flex-direction: row;
         flex-wrap: nowrap;
-        gap: 25px;
+        gap: 40px;
     }
 
     .connect-area {
@@ -942,17 +952,17 @@ footer {
 
     .dp1sketches-search {
         margin-top: 0px;
-        margin-left: -5px;
+        margin-left: 5px;
     }
 
-    .dp1-images {
+    .dp1-images img {
         margin-left: none;
         margin-right: none;
     }
 
-    /* .dp1wireframes-feed {
-        margin-left: 250px;
-    } */
+    .dp1-images img:hover {
+        transform: scale(1.05);
+    }
 
     .c-skills {
         margin-top: -360px;
@@ -1013,6 +1023,10 @@ footer {
     }
 
     #main img:hover {
+        transform: none;
+    }
+
+    .dp1-images img:hover {
         transform: none;
     }
 
