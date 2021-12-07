@@ -311,19 +311,21 @@ nav a:hover {
 }
 
 .connect-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    margin:auto;
     margin-top: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
     margin-bottom: 30px;
     padding-top: 15px;
     padding-left: 10px;
     border: 7px solid;
     border-image: linear-gradient(45deg, #ffff00, rgb(255, 222, 9)) 1;
+}
+
+.flip-card-front {
+    display: none;
+}
+
+.not-flip-card {
+    display: none;
 }
 
 .form legend {
@@ -348,6 +350,7 @@ input[type=text], select, textarea, input[type=email] {
   input[type=submit] {
     background-color: #e9e94a9a;
     color: white;
+    font-weight: bold;
     width: 100%; 
     padding: 12px 20px;
     border: none;
@@ -355,10 +358,9 @@ input[type=text], select, textarea, input[type=email] {
     cursor: pointer;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
+  /* input[type=submit]:hover {
     background-color: #CEE7E6;
-  }
+  } */
   
   /* Add a background color and some padding around the form */
   .form {
@@ -453,6 +455,10 @@ input[type=text], select, textarea, input[type=email] {
     margin-right: 40px;
 }
 
+.description-description p {
+    text-align: left;
+}
+
 .description-description h3{
     padding-top: 10px;
 }
@@ -505,8 +511,15 @@ input[type=text], select, textarea, input[type=email] {
 
 .wireframing-description img {
     width: 150px;
-    border: 2px solid #333;                     /* CHANGE THIS SO THAT THEY ARE CENTERED*/
+    border: 2px solid #333;                 
     border-radius: 15px;
+}
+
+.wireframing-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
 }
 
 .dp1wireframes-feed {
@@ -625,9 +638,19 @@ footer {
     object-fit: cover;
 }
 
-@keyframes animate {
-    from {background-color: rgba(255, 255, 0, 1);}
+@keyframes background-color-changer {
+    from {background-color: #e9e94a9a;}
     to {background-color: #CEE7E6;}
+}
+
+@keyframes dissolve-in {
+    from {background-color: #ffff00;}
+    to {background-color: #CEE7E6;}
+}
+
+@keyframes text-dissolve-in {
+    from {color: #ffff00;}
+    to {color: #CEE7E6;}
 }
 
 @media only screen and (min-width: 768px){
@@ -644,6 +667,8 @@ footer {
         padding-left: 5em;
         padding-right: 5em;
         margin-bottom: 5px;
+        animation-name: dissolve-in;
+        animation-duration: 3s;
     }
     
     .mia:hover {
@@ -710,6 +735,8 @@ footer {
     }
 
     #full-screen-nav .current {
+        animation-name: text-dissolve-in;
+        animation-duration: 3s;
         color: #CEE7E6;
         background-color: #333;
         text-decoration: underline;
@@ -770,14 +797,20 @@ footer {
     }
 
     #dp1-text {
+        animation-name: dissolve-in;
+        animation-duration: 3s;
         background-color: #CEE7E6;
     }
 
     #ghp-text {
+        animation-name: dissolve-in;
+        animation-duration: 3s;
         background-color: #CEE7E6;
     }
 
     #dp2-text {
+        animation-name: dissolve-in;
+        animation-duration: 3s;
         background-color: #CEE7E6;
     }
 
@@ -818,6 +851,11 @@ footer {
         margin-bottom: 50px;
         margin-top: 0px;
     } 
+
+    input[type=submit]:hover {
+        animation: background-color-changer 2s;
+        background-color: #CEE7E6;
+    }
 
     .form {
         margin: auto;
@@ -907,13 +945,6 @@ footer {
         width: 200px;
     }
 
-    .wireframing-flex {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-    }
-
     .prototype div{
         margin-left: 90px;
     }
@@ -937,6 +968,8 @@ footer {
     }
 
     footer {
+        animation-name: dissolve-in;
+        animation-duration: 2s;
         background-color: #CEE7E6;
     }
 
@@ -968,13 +1001,7 @@ footer {
     }
 
     .connect-area {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding-bottom: 10px;
-        margin-left: 250px;
-        margin-right: 250px;
+        margin: auto;
     }
 
     .connect-area h2 {
@@ -983,6 +1010,73 @@ footer {
 
     .connect-area p {
         font-size: 1.05em;
+    }
+
+
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    .flip-card {
+        background-color: transparent;
+        width: 500px;
+        height: 250px;
+        border: 7px solid;
+        border-image: linear-gradient(45deg, #ffff00, rgb(255, 222, 9)) 1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        margin-bottom: 30px;
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+
+    .flip-card:hover .flip-card-inner,
+    .flip-card:focus-within .flip-card-inner,
+    .flip-card:active .flip-card-inner,
+    .flip-card:focus .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+    
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+        padding-top: 70px;
+        padding-left: 45px;
+        display: block;
+        background-color: transparent;
+        color: #333;
+    }
+    
+    /* Style the back side */
+    .flip-card-back {
+        text-align: left;
+        background-color: transparent;
+        color: #333;
+        transform: rotateY(180deg);
+    }
+
+    .not-flip-card {
+        margin-left: 275px;
+        margin-right: 275px;
+        margin-bottom: 40px;
     }
 
     .form {
@@ -1085,6 +1179,34 @@ footer {
 
     .resume-container img:hover {
         transform: none;
+    }
+
+    #full-screen-nav .current {
+        animation-name: none;
+    }
+
+    .flip-card {
+        display: none;
+    }
+
+    .not-flip-card {
+        display: block;
+    }
+
+    .mia {
+        animation-name: none;
+    }
+
+    input[type=submit]:hover {
+        animation-name:none;
+    }
+
+    #dp1-text, #ghp-text, #dp2-text {
+        animation-name: none;
+    }
+
+    footer {
+        animation-name: none;
     }
 }
 
