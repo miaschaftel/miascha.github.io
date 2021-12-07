@@ -348,9 +348,10 @@ input[type=text], select, textarea, input[type=email] {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #e9e94a9a;
-    color: white;
+    background-color: #ecec559a;
+    color: rgb(110, 110, 110);
     font-weight: bold;
+    font-size: 1.1em;
     width: 100%; 
     padding: 12px 20px;
     border: none;
@@ -526,7 +527,7 @@ input[type=text], select, textarea, input[type=email] {
     margin-left: 1em;
 }
 
-.prototype div{
+/* .prototype div{
     margin-left: 47px;
     margin-right: 30px;
 }
@@ -539,7 +540,7 @@ input[type=text], select, textarea, input[type=email] {
     margin: auto;
     display: block;
     margin-bottom: 40px;
-}
+} */
 
 /* GHP PAGE CSS */
 
@@ -945,9 +946,9 @@ footer {
         width: 200px;
     }
 
-    .prototype div{
+    /* .prototype div{
         margin-left: 100px;
-    }
+    } */
 
     /* GHP PAGE CSS */
 
@@ -1188,6 +1189,10 @@ footer {
         transform: none;
     }
 
+    .parallax {
+        display: none;
+    }
+
     #main img:hover {
         transform: none;
     }
@@ -1205,13 +1210,22 @@ footer {
         animation-name: none;
     }
 
-    .flip-card {
+    .flip-card:hover .flip-card,
+    .flip-card:focus-within .flip-card,
+    .flip-card:active .flip-card,
+    .flip-card:focus .flip-card {
+        transform:rotateY(0deg);   
+        transform: none; 
+        transition: none;    
+    } 
+
+    /* .flip-card {
         display: none;
     }
 
     .not-flip-card {
         display: block;
-    }
+    } */
 
     .mia {
         animation-name: none;
