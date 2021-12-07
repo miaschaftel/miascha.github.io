@@ -654,6 +654,16 @@ footer {
     to {color: #CEE7E6;}
 }
 
+@media only screen and (min-width: 576px){
+   
+    .menu-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
 @media only screen and (min-width: 768px){
     #mobile-screen-nav {
         display: none;
@@ -970,7 +980,7 @@ footer {
 
     footer {
         animation-name: dissolve-in;
-        animation-duration: 2s;
+        animation-duration: 3s;
         background-color: #CEE7E6;
     }
 
@@ -984,32 +994,8 @@ footer {
         margin-right: 100px;
     }
 
-    .parallax {
-        /* The image used */
-        background-image: url("../imgs/parallax.jpg");
-      
-        /* Set a specific height */
-        min-height: 250px;
-      
-        /* Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        margin-bottom: 40px;
-      }
 
     /* ABOUT PAGE CSS */
-    .about header {
-        background-image:  url("../imgs/headshot.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed; /* Parallax effect */
-        background-position: center; /* Parallax effect */
-        background-size: cover; /* Parallax effect */
-        color: white;
-        height: 200px; /* Parallax effect */
-      }
 
     .courses {
         flex-direction: row;
@@ -1210,22 +1196,16 @@ footer {
         animation-name: none;
     }
 
-    .flip-card:hover .flip-card,
-    .flip-card:focus-within .flip-card,
-    .flip-card:active .flip-card,
-    .flip-card:focus .flip-card {
-        transform:rotateY(0deg);   
-        transform: none; 
-        transition: none;    
-    } 
-
-    /* .flip-card {
+    .flip-card, .flip-card-back, .flip-card:hover .flip-card-inner,
+    .flip-card:focus-within .flip-card-inner,
+    .flip-card:active .flip-card-inner,
+    .flip-card:focus .flip-card-inner {
         display: none;
     }
 
     .not-flip-card {
         display: block;
-    } */
+    }
 
     .mia {
         animation-name: none;
